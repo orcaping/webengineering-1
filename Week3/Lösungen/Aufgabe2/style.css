@@ -1,0 +1,41 @@
+p {
+    font-size: 1rem;
+    color: blue;
+    background-color: lightyellow;
+    border-color: red;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+}
+
+h1,h2,h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+li:first-child {
+    color: green;
+}
+li:nth-child(2) {
+    color: red;
+}
+li:nth-child(odd) {
+    font-style: italic;
+}
+li:nth-child(even) {
+    font-weight: bold;
+}
+li:last-child {
+    padding-top: 50px;
+}

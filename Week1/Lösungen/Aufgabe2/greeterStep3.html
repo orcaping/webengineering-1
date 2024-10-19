@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WE1 Greeter</title>
+    <style>
+        label, input, button, output {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input:invalid {
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+<h1>WE1 Greeter</h1>
+<!--TODO: Use form submission to support submit on return-->
+<label for="name">Please Type your Name</label>
+<input id="name" required>
+<button id="greet-btn">Show Greeting</button>
+<output id="greeting"></output>
+
+<script>
+    //dom refs
+    const nameInput = document.querySelector("#name");
+    const greetingOutput = document.querySelector("#greeting");
+
+    //controller
+    document.querySelector("#greet-btn").addEventListener('click',
+        () => {
+            greetingOutput.value = `Hello ${nameInput.value}. Welcome to WED1`;
+        })
+</script>
+</body>
+</html>

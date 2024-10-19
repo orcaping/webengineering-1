@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Fussballfeld Rechner</title>
+    <style>
+        input, button {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input:invalid {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+<h1>Konverter Meter x Meter -> Fussballfelder</h1>
+<form id="calc-form">
+    <label for="m1">Meter 1</label><input id="m1" required>
+    <label for="m2">Meter 2</label><input id="m2" required>
+    <button>Berechnen</button>
+    <output id="result"></output>
+</form>
+<script>
+    //dom refs
+    const meter1Input = document.querySelector("#m1");
+    const meter2Input = document.querySelector("#m2");
+    const resultOut = document.querySelector("#result");
+    document.querySelector("#calc-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const meter1 = parseFloat(meter1Input.value) || 0;
+        const meter2 = parseFloat(meter2Input.value) || 0;
+        const result = (meter1 * meter2 / 7140);
+        resultOut.value = `${result.toFixed(2)} Fussballfelder`
+    });
+</script>
+</body>
+</html>

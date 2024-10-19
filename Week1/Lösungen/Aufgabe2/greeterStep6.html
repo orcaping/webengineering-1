@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WE1 Greeter</title>
+    <!--TODO: Move CSS and JS to separate files-->
+    <style>
+        label, input, button, output {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input:invalid {
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+<h1>WE1 Greeter</h1>
+<form id="greet-form">
+    <label for="name">Please Type your Name</label>
+    <input id="name" required>
+    <button id="greet-btn">Show Greeting</button>
+    <output id="greeting"></output>
+</form>
+
+<script>
+    //dom refs
+    const nameInput = document.querySelector("#name");
+    const greetingOutput = document.querySelector("#greeting");
+
+    let deleteTaskId;
+
+    document.querySelector("#greet-form").addEventListener('submit',
+        (event) => {
+            event.preventDefault()
+            greetingOutput.value = `Hello ${nameInput.value}. Welcome to WED1`;
+            clearTimeout(deleteTaskId);
+            deleteTaskId = setTimeout(() => {
+                greetingOutput.value = '';
+                nameInput.value = '';
+            }, 3000);
+        })
+</script>
+</body>
+</html>

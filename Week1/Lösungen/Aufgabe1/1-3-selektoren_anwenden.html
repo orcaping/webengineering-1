@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Selectors 1</title>
+  <style>
+    * {
+      font-size: 40px;
+    }
+    div {
+      color: darkorange;
+    }
+    .div {
+      color: limegreen;
+    }
+    #div {
+      color: darkmagenta;
+    }
+
+    ul > ul {
+      color: rebeccapurple;
+    }
+    ul :nth-child(0) {
+      color: brown;
+    }
+    ul :nth-child(2) {
+      color: mediumslateblue;
+    }
+    ul ul :last-child {
+      color: darkred;
+    }
+    ul * li {
+      color: darkgreen;
+    }
+    ul li p {
+      color: navy;
+    }
+    ul :nth-child(odd) {
+      color: teal;
+    }
+  </style>
+</head>
+<body>
+<h1>Selectors</h1>
+<div>1</div>
+<div id="div">2</div>
+<div class="div">3</div>
+<div class="div zzz">4</div>
+<div class=".div">5</div>
+<div class="#div">6</div>
+<div id="#div">7</div>
+<div id=".div">8</div>
+
+<ul>
+  <li>Item 1</li>
+  <li>
+    Item 2
+    <ul>
+      <li>Item 2.1</li>
+      <li><p>Item 2.2</p></li>
+      <li>Item 2.3</li>
+    </ul>
+  </li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+  <li>Item 5</li>
+  <li><a href="www.ost.ch">Item 6 (ost.ch)</a></li>
+</ul>
+</body>
+</html>

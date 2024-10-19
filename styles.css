@@ -1,0 +1,32 @@
+.post h2 {
+    font-size: 24px;
+}
+
+header nav li a {
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+
+.post-featured .post-title {
+    color: orange;
+}
+
+.post-meta .date {
+    color: darkgray;
+    font-style: italic;
+}
+
+.post-content {
+    border-top: 20px;
+}
+
+
+header {
+    align-content: center;
+    text-align: center;
+    color: darkblue;
+    background-color: lightgray;
+}

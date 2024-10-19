@@ -1,0 +1,47 @@
+/* GLOBAL STYLES */
+*  {
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: rgb(238, 13, 13);
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+a:hover {
+    background: rgba(238, 13, 13, 0.75);
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 3em 1.5em;
+}
+
+.navigation ul {
+    border: 1px solid rgb(212, 20, 20);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    flex: 1;
+}
+
+.navigation .user {
+    flex: 0 0 40px;
+}

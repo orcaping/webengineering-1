@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List-Type Inheritance</title>
+  <style>
+    #my-list {
+        list-style: upper-alpha;
+        /*only supported in firefox*/
+        /*list-style-type: symbols(cyclic '❤️' '💙' '💚')*/
+    }
+  </style>
+</head>
+<body>
+<h1>List-Type Inheritance</h1>
+<p>Below a list of lists</p>
+<ul id="my-list">
+  <li>Sleep</li>
+  <li>Eat</li>
+  <li>
+    Study
+    <ul>
+      <li>WED1</li>
+      <li>AD1</li>
+      <li>CN2</li>
+    </ul>
+  </li>
+</ul>
+
+</body>
+</html>

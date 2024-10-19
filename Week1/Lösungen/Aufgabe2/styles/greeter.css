@@ -1,0 +1,8 @@
+label, input, button, output {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input:invalid {
+    background-color: coral;
+}

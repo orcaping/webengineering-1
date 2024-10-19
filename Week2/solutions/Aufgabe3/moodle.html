@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="https://moodle.ost.ch/pluginfile.php/1/core_admin/logocompact/300x300/1660109966/Ost_Logo_kompakt_RGB_Youtube_800x800px.jpg" alt="Moodle OST">
+      <nav>
+        <ul>
+          <li>Startseite</li>
+          <li>Dashboard</li>
+          <li>Meine Kurse</li>
+          <li>Support/News</li>
+          <li>Kurs RJ erstellen</li>
+          <li>MyMedia</li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <input type="search" />
+      <button><i>Glocken-Icon</i></button>
+      <button><i>Sprechblasen-Icon</i></button>
+      <button><i>User-Initialen</i></button>
+      <label>
+        Bearbeiten
+        <input type="checkbox" />
+      </label>
+    </div>
+  </header>
+  <main>
+    <h1>Dashboard</h1>
+    <section>
+      <h2>Zeitleiste</h2>
+      <select>
+        <option>Alle</option>
+        <option>Überfällig</option>
+        <optgroup label="Fälligkeitsdatum">
+          <option selected>Nächste 7 Tage</option>
+          <option>Nächste 30 Tage</option>
+          <option>Nächste 3 Monate</option>
+          <option>Nächste 6 Monate</option>
+        </optgroup>
+      </select>
+      <select>
+        <option selected>Sortiert nach Datum</option>
+        <option>Sortiert nach Kurse</option>
+      </select>
+    </section>
+    <section>
+      <h2>Zuletzt besuchte Kurse</h2>
+      <button>&lt;</button>
+      <button>&gt;</button>
+
+      <div>
+        <span>Functional Programming FS2022</span>
+        <span>Semester FS2022</span>
+      </div>
+
+      <div>
+        <span>Moodle Support und News</span>
+        <span>Information</span>
+      </div>
+      <div>
+        <span>Mobile and GUI Engineering HS2021</span>
+        <span>Semester HS2021/2022</span>
+      </div>
+    </section>
+    <section>
+      <h2>Kalender</h2>
+      <select>
+        <option selected>Alle Kurse</option>
+        <option>M_FP_FS2022</option>
+        <option>M_MGE_HS2021</option>
+        <option>M_Support</option>
+      </select>
+      <button>Neuer Termin</button>
+      <div>
+        <span>&lt;</span>
+        <span>Juli</span>
+      </div>
+      <h3>August 2022</h3>
+      <div>
+        <span>September</span>
+        <span>&gt;</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Mo</th>
+            <th>Die</th>
+            <th>Mi</th>
+            <th>Do</th>
+            <th>Fr</th>
+            <th>Sa</th>
+            <th>So</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <span>1</span>
+            </td>
+            <td>
+              <span>2</span>
+            </td>
+            <td>
+              <span>3</span>
+            </td>
+            <td>
+              <span>4</span>
+            </td>
+            <td>
+              <span>5</span>
+            </td>
+            <td>
+              <span>6</span>
+            </td>
+            <td>
+              <span>7</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>8</span>
+            </td>
+            <td>
+              <span>9</span>
+            </td>
+            <td>
+              <span>10</span>
+            </td>
+            <td>
+              <span>11</span>
+            </td>
+            <td>
+              <span>12</span>
+            </td>
+            <td>
+              <span>13</span>
+            </td>
+            <td>
+              <span>14</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>15</span>
+            </td>
+            <td>
+              <span>16</span>
+            </td>
+            <td>
+              <span>17</span>
+            </td>
+            <td>
+              <span>18</span>
+            </td>
+            <td>
+              <span>19</span>
+            </td>
+            <td>
+              <span>20</span>
+            </td>
+            <td>
+              <span>21</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>22</span>
+            </td>
+            <td>
+              <span>23</span>
+            </td>
+            <td>
+              <span>24</span>
+            </td>
+            <td>
+              <span>25</span>
+            </td>
+            <td>
+              <span>26</span>
+            </td>
+            <td>
+              <span>27</span>
+            </td>
+            <td>
+              <span>28</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>29</span>
+            </td>
+            <td>
+              <span>30</span>
+            </td>
+            <td>
+              <span>31</span>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <span>
+        <a href="https://moodle.ost.ch/calendar/view.php?view=month&time=1661266798">Vollständiger Kalender</a>
+      </span>
+      <span>
+        <a href="https://moodle.ost.ch/calendar/managesubscriptions.php">Import und Export</a>
+      </span>
+    </section>
+    <details>
+      <summary>&lt;</summary>
+      <section>
+        <h2>Zuletzt genutzte Objekte</h2>
+        <div>
+          <img src="https://moodle.ost.ch/theme/image.php/boost/assign/1660109966/monologo" alt="Aufgabe" />
+          <h3>Testat: "Interest-based Project - Lambda Calculus Interpreter"</h3>
+          <span>Functional Programming FS2022</span>
+        </div>
+
+        <div>
+          <img src="https://moodle.ost.ch/theme/image.php/boost/resource/1660109966/monologo" alt="Datei" />
+          <h3>PLFM 03-Lambda Calculus 00-Lambda Calculus V0103 WIP</h3>
+          <span>Functional Programming FS2022</span>
+        </div>
+
+        <button>Mehr Objekte anzeigen</button>
+      </section>
+      <section>
+        <h3>Aktuelle Termine</h3>
+        <span>Keine weitere Termine</span>
+        <a href="https://moodle.ost.ch/calendar/view.php?view=upcoming">Zum Kalender ...</a>
+      </section>
+    </details>
+  </main>
+  <footer>
+    <button>?</button>
+  </footer>
+</body>
+</html>
